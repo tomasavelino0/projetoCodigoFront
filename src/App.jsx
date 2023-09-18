@@ -1,9 +1,12 @@
 import './App.css'
-
+import Body from './components/Body'
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
 
   return (
-    <p>Hello front</p>
+    <body>
+      <Body/>
+    </body>
   )
 }
 
