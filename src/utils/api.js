@@ -22,14 +22,15 @@ async function postJogador(name) {
 }
 
 async function getTimes() {
-    const request = await axios.get(getTimesUrl);
-    const response = request.status
-    return response.status
+  const response = await axios.get(getTimesUrl);
+  const data = response.data;
+  return data;
 }
 
 async function deleteAll() {
     const request = await axios.delete(deleteAllUrl);
-    const response = await request.status
+    const response = await request.data
+
     return response
 }
 
